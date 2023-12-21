@@ -8,3 +8,5 @@ view2.style.display = "flex";
 
 const views = document.getElementsByClassName("view");
 console.log(views);
+const sameViews = document.querySelectorAll(".views");
+console.log(sameViews);
