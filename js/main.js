@@ -70,4 +70,11 @@ const createDivs = (parent, iter) => {
   newDiv.style.margin = "10px";
   newDiv.style.display = "flex";
   newDiv.style.justifyContent = "center";
+  newDiv.style.alignItems = "center";
+  parent.append(newDiv);
 };
+
+// createDivs(view2, 10);
+for (let i = 1; i <= 12; i++) {
+  createDivs(view2, i);
+}
