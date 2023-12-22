@@ -34,3 +34,8 @@ const navbar = document.querySelector("nav");
 navbar.innerHTML = "<h1>Hello</h1> <p>This should align right.</p>";
 console.log(navbar);
 navbar.style.justifyContent = "space-between";
+
+//DOM FAMILY TREE
+console.log(evenDivs[0]);
+console.log(evenDivs[0].parentElement);
+console.log(evenDivs[0].parentElement.children);
