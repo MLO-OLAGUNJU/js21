@@ -45,3 +45,29 @@ console.log(evenDivs[0].parentElement.lastChild);
 console.log(evenDivs[0].parentElement.lastElementChild);
 console.log(evenDivs[0].parentElement.firstChild);
 console.log(evenDivs[0].parentElement.firstElementChild);
+console.log(evenDivs[0].nextSibling);
+console.log(evenDivs[0].nextElementSibling);
+console.log(evenDivs[0].previousSibling);
+console.log(evenDivs[0].previousElementSibling);
+
+//adding new elements and removing elements from the DOm
+view1.style.display = "none";
+view2.style.display = "flex";
+view2.style.flexdirection = "row";
+view2.style.flexwrap = "wrap";
+view2.style.margin = "10px";
+
+while (view2.lastChild) {
+  view2.lastChild.remove();
+}
+
+const createDivs = (parent, iter) => {
+  const newDiv = document.createElement("div");
+  newDiv.textContent = iter;
+  newDiv.style.backgroundColor = "#000";
+  newDiv.style.width = "100px";
+  newDiv.style.height = "100px";
+  newDiv.style.margin = "10px";
+  newDiv.style.display = "flex";
+  newDiv.style.justifyContent = "center";
+};
