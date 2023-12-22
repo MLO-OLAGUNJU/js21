@@ -31,4 +31,6 @@ const navText = document.querySelector("nav h1");
 console.log(navText);
 navText.textContent = "Hello world!";
 const navbar = document.querySelector("nav");
-navbar.innerHTML;
+navbar.innerHTML = "<h1>Hello</h1> <p>This should align right.</p>";
+console.log(navbar);
+navbar.style.justifyContent = "space-between";
