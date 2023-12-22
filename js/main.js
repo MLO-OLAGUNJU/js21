@@ -30,3 +30,5 @@ for (let i = 0; i < evenDivs.length; i++) {
 const navText = document.querySelector("nav h1");
 console.log(navText);
 navText.textContent = "Hello world!";
+const navbar = document.querySelector("nav");
+navbar.innerHTML;
